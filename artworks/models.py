@@ -7,3 +7,6 @@ class Artwork(models.Model):
     comments = models.CharField(max_length=100)
     image_url = models.CharField(max_length=1000)
     
+    class Meta:
+        ordering = ['category', 'subject']
+    
